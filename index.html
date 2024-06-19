@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cachorrito - Comida Para Cães</title>
+    <meta name="description" content="Cahorrito - comida congelada para cachorros. Cachorrito não é ração. É comida de verdade. Sem químicos. Seu animal agradecerá.">
+    <meta name="keywords" content="cahorrito, comida congelada para cachorros, comida orgânica para cachorros, comida para cães, porto alegre">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    
+    <style>    
+        /* latin */
+        @font-face {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2");
+        }
+        /* latin */
+        @font-face {
+            font-family: "Pangolin";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/pangolin/v6/cY9GfjGcW0FPpi-tWMfN79w.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+            color: #4e4242;            
+            background-color: white;
+        }
+        img {
+            display: inline-block;
+        }
+        img {
+            vertical-align: top;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            display: inline-block;
+            padding-left: 30px;
+        }
+        li {
+            padding-top: 10px;
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }        
+        .grow:hover {
+            transform: scale(1.1);
+        }
+        .max-width-400px {
+            max-width: 400px;
+        }
+        .max-width-800px {
+            max-width: 800px;
+        }
+        .pad-hor-10px {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .pad-bottom-10px {
+            padding-bottom: 10px;
+        }
+        .pad-bottom-50px {
+            padding-bottom: 50px;
+        }
+        .pangolin {
+            font-family: pangolin;
+        }
+        .font-14px {
+            font-size: 14px;
+        }
+        .font-20px {
+            font-size: 20px;
+        }
+        .font-26px {
+            font-size: 26px;
+        }
+        .font-30px {
+            font-size: 30px;
+        }
+        .font-120pc {
+            font-size: 120%;
+        }
+        .grey-foot {
+            height: 1px;
+            margin-top: 7px;
+            background-color: lightgrey;
+        }
+        .beige {
+            color: beige;
+        }
+        .white {
+            color: white;
+        }
+        .dark {
+            color: #4e4242;
+        }
+        .whitesmoke {
+            color: whitesmoke;
+        }
+        .bg-silver {
+            background-color: silver;
+        }
+        .bg-laranjito {
+            background-color: rgb(200,70,10); /* #C8450A*/
+        }
+        .bg-whitegrey {
+            background-color: rgb(231,231,231);
+        }
+        .bg-lightgrey {
+            background-color: lightgrey;
+        }
+        .weight-600 {
+            font-weight: 600;
+        } 
+        .weight-900 {
+            font-weight: 900;
+        } 
+        .width-100pc {
+            width: 100%;
+        }
+        .box {
+            display: inline-block;
+            width: 100%;
+            min-width: 360px;  
+            vertical-align: middle;      
+        }
+        .logo { 
+            width: 150px;
+            max-width: 30%;
+            padding: 10px 0;
+        }
+        .product {
+            display: inline-block;
+            width: 330px;
+            height: 470px;
+            margin: 50px 0 0 0;
+            vertical-align: top;
+            background-color: white;
+        }
+        .product-spacer {
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+        }
+        
+        .whatsapp-icon {
+            display: inline-block;
+            height: 75px;
+            width: 75px;
+            margin: 10px auto;
+            animation: wia 3s infinite;
+        }
+        /*****************************/
+        /*  whatsapp icon animation  */
+        /*****************************/
+        @keyframes wia {
+            35% { transform: scale(1); }
+            45% { transform: scale(1.5); }
+            55% { transform: scale(1); }
+            65% { transform: scale(1.3); }
+            75% { transform: scale(1); }
+        }
+        
+        
+        /**************************************************************
+                                MEDIA QUERY
+        ***************************************************************/
+
+        @media (max-width: 599px) {
+            .hide-before-600px { display: none; }
+            .font-18px-before-600px { font-size: 18px; }
+        }
+        @media (max-width: 789px) {
+            .block-before-790px { display: block; }
+        }
+        @media (max-width: 899px) {
+            .hide-before-900px { display: none; }
+        }
+        @media (max-width: 1199px) {
+            .block-before-1200px { display: block; }
+        }
+        @media (min-width: 600px) {
+            .hide-after-599px { display: none; }
+        }  
+        @media (min-width: 900px) {
+            .hide-after-899px { display: none; }
+            .width-45pc-after-899px { width: 45%; }
+        }  
+     </style>
+</head>
+<body>
+
+    <header class="center pad-hor-10px">        
+        <img class="logo" src="images/logo-600x720.png" alt="logo - Cachorrito"><br>   
+        <i class="font-14px hide-after-599px">
+            Não é ração<br>
+            É comida de verdade, sem química
+         </i>          
+        <i class="font-14px hide-before-600px">
+            Não é ração, é comida de verdade, sem química
+         </i>        
+    </header>
+    <div class="grey-foot"></div>    
+    
+    <div class="center pad-hor-10px pangolin whitesmoke bg-laranjito">
+        <br>
+        <h1>Você <span class="font-120pc">ECONOMIZA</span> e seu cachorro fica <span class="font-120pc">MELHOR</span> alimentado</h1>
+        <br>
+    </div>
+    
+    <div class="center pangolin dark">
+    
+        <div class="box width-45pc-after-899px center pangolin pad-hor-10px">
+            <br><br>
+            <ul class="max-width-800px pad-bottom-10px font-20px">
+                <li>não usamos corantes</li>
+                <li>não usamos espessantes</li>
+                <li>não usamos flavorizantes</li>
+                <li>não usamos conservantes</li>
+                <li>não usamos aromatizantes</li>
+                <li>usamos carne, grãos e legumes</li>
+            </ul>
+        </div> 
+    
+        <div class="box width-45pc-after-899px center pangolin pad-hor-10px">
+            <br><br>
+            <h2 class="font-30px">Nossos alimentos custam menos do que as rações das melhores marcas e oferecem muito mais qualidade</h2>
+        </div> 
+        <br><br><br>
+    </div>
+       
+    <div class="center pangolin bg-whitegrey">
+
+        <div class="box width-45pc-after-899px">
+            <br><br>
+            <img class="width-100pc max-width-400px" src="images/ingredients-red-white.png" alt="Amostra De Produto Cachorrito">
+            <br><br> 
+        </div>        
+
+        <div class="box width-45pc-after-899px pad-hor-10px">
+            <br><br>
+            <h2 class="pad-bottom-10px">Estes são os ingredientes que usamos</h2>
+            <ul class="max-width-800px pad-bottom-10px font-20px">
+                <li>coração e fígado de bovino</li>
+                <li>coração e fígado de suíno</li>
+                <li>moela e fígado de galinha</li>
+                <li>arroz</li>
+                <li>batata-doce</li>
+                <li>cenoura</li>
+                <li>chuchu</li>
+                <li>vagem</li>
+                <li>brócolis</li>
+            </ul>
+            <br><br> 
+        </div>
+    </div>   
+    
+    <div class="center pad-hor-10px pangolin font-30px weight-900">
+        <br><br>
+        Em embalagens práticas para uso no micro-ondas
+        <br><br>
+        Com iscas de carne para o seu cachorro ADULTO mastigar
+        <br><br><br>
+    </div>   
+    
+    <div class="center pad-hor-10px pad-bottom-50px font-20px bg-laranjito">       
+        
+        <span class="product">
+            <img class="width-100pc" src="images/amostra.png" alt="Amostra De Produto Cachorrito">
+            <br><br><b>com carne bovina &nbsp; 330g <br><span class="font-30px">R$ 8,60</span></b>
+        </span>
+        
+        <span class="product-spacer block-before-790px"></span>
+        
+        <span class="product">
+            <img class="width-100pc" src="images/amostra.png" alt="Amostra De Produto Cachorrito">
+            <br><br><b>com carne suína &nbsp; 330g <br><span class="font-30px">R$ 8,60</span></b>
+        </span>
+        
+        <span class="product-spacer block-before-1200px"></span>
+               
+        <span class="product">
+            <img class="width-100pc" src="images/amostra.png" alt="Amostra De Produto Cachorrito">
+            <br><br><b>com carne de frango &nbsp; 330g <br><span class="font-30px">R$ 8,60</span></b>
+        </span>
+    </div>    
+    
+    <div class="center pad-hor-10px pangolin">
+        <br><br>
+        <h2 class="pad-bottom-10px">As rações industrializadas para cachorros são práticas, porém...</h2>
+        <ul class="max-width-800px pad-bottom-10px font-20px font-18px-before-600px weight-600px">
+            <li>se precisam adicionar vitamina, a matéria-prima não é de primeira qualidade</li>
+            <li>na sua fabricação são usadas altas temperaturas e pressões, que degradam nutrientes sensíveis</li>
+            <li>alguns cães desenvolvem <b>problemas de saúde</b>, como doenças de pele e outras alergias, obesidade, doenças dentárias e distúrbios gastrointestinais</li>
+        </ul>
+        <br><br>
+    </div>   
+        
+    <footer class="center font-14px weight-600 white bg-laranjito">
+        <br><br>
+        <span class="font-26px pangolin">Entre em contato!</span><br>
+        <br>
+        <a class="whatsapp-link" target="_blank" href=""><span class="whatsapp-icon"></span></a><br>
+        WhatsApp &nbsp; (51) 995.30.95.57
+        <br><br>
+        
+        <span class="hide-before-900px">
+            <!-- Cachorrito EIRELI &nbsp; | &nbsp; --> CNPJ 53.949.979/0001-05
+            <br><br>
+            Rua Alcides Gonzaga 240 &nbsp; | &nbsp; Bairro Boa Vista &nbsp; | &nbsp; CEP 90480-020 &nbsp;&nbsp; Porto Alegre - RS
+        </span>
+        <span class="hide-after-899px">
+            <!-- Cachorrito EIRELI <br> --> CNPJ 53.949.979/0001-05
+            <br><br>
+            Rua Alcides Gonzaga 240 <br> Bairro Boa Vista <br> CEP 90480-020 &nbsp;&nbsp; Porto Alegre - RS
+        </span>
+        <br><br>
+    </footer>  
+    
+<script>
+"use strict"
+
+// main ///////////////////////////////////////////////////////////////////////
+
+var whatsAppSvgIcon = '<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;" version="1.1" viewBox="0 0 24 24" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="24" id="Artboard1" style="fill:none;" width="24" x="0" y="0"/><g><g><path d="M4.018,17.048c-0.96,-1.484 -1.518,-3.253 -1.518,-5.151c0,-5.243 4.257,-9.5 9.5,-9.5c5.243,0 9.5,4.257 9.5,9.5c0,5.243 -4.257,9.5 -9.5,9.5c-1.777,0 -3.44,-0.489 -4.863,-1.339l-4.637,1.545l1.518,-4.555Z" style="fill:#f3f3f3;"/><path d="M5.795,16.304c-0.886,-1.244 -1.407,-2.765 -1.407,-4.407c0,-4.201 3.411,-7.612 7.612,-7.612c4.201,0 7.612,3.411 7.612,7.612c0,4.201 -3.411,7.611 -7.612,7.611c-1.59,0 -3.066,-0.488 -4.288,-1.323l-2.862,0.954l0.945,-2.835Z" style="fill:#00a82d;"/></g><path d="M9.714,13.873c-1.124,-1.374 -1.874,-3.056 -2.109,-4.88c-0.063,-0.508 0.106,-1.018 0.461,-1.387c0.355,-0.369 0.858,-0.558 1.368,-0.515l0.049,0.005c0,0 0.561,0.15 0.868,0.233c0.122,0.033 0.219,0.124 0.26,0.243c0.138,0.41 0.464,1.373 0.618,1.826c0.05,0.147 0.004,0.31 -0.114,0.41c-0.233,0.196 -0.618,0.52 -0.858,0.723c-0.129,0.109 -0.17,0.29 -0.1,0.443c0.279,0.608 0.635,1.176 1.057,1.69c0.434,0.502 0.933,0.949 1.485,1.327c0.14,0.095 0.325,0.085 0.454,-0.024c0.241,-0.202 0.626,-0.526 0.858,-0.722c0.119,-0.1 0.287,-0.117 0.424,-0.043c0.42,0.228 1.314,0.712 1.694,0.918c0.111,0.06 0.185,0.172 0.196,0.297c0.029,0.317 0.083,0.895 0.083,0.895l-0.004,0.049c-0.044,0.51 -0.315,0.974 -0.739,1.261c-0.424,0.288 -0.955,0.368 -1.445,0.22c-1.772,-0.545 -3.313,-1.581 -4.479,-2.937l-0.027,-0.032Z" style="fill:#f3f3f3;"/></g></svg>'
+
+
+var images = { }
+var imagesToLoad = 0
+
+// load images ////////////////////////////////////////////////////////////////
+
+function loadImage(name, src) {
+    imagesToLoad += 1
+    var img = new Image()
+    img.onload = function () { loaded(name, img) }
+    img.src = src
+    // loaded
+    function loaded(name, img) {
+        imagesToLoad -= 1
+        var cnv = document.createElement("canvas")
+        cnv.width = img.width
+        cnv.height = img.height
+        cnv.getContext("2d").drawImage(img, 0, 0)
+        //
+        images[name] = cnv
+    }
+}
+
+// main ///////////////////////////////////////////////////////////////////////
+
+function main() {
+    processWhatsAppIcons()
+    processWhatsAppLinks()
+    //
+    goOn()
+}
+
+function goOn() {
+    if (imagesToLoad == 0) { mainLoop(); return; }
+    setTimeout(goOn, 10)
+}
+
+function mainLoop() {
+    // no animation
+    // requestAnimationFrame(mainLoop)
+}
+
+// whatsapp ///////////////////////////////////////////////////////////////////
+
+function processWhatsAppIcons() {
+    var elements = document.getElementsByClassName("whatsapp-icon")
+    for (var e of elements) { e.innerHTML = whatsAppSvgIcon }
+}
+
+function processWhatsAppLinks() {
+    var href = "https://"
+    href += isMobileDevice() ? "api" : "web"
+    href += ".whatsapp.com/send?phone=5551995309557&text=Ol%C3%A1%20Cachorrinho!%20Desejo%20informa%C3%A7%C3%B5es!"
+
+    var anchors = document.getElementsByClassName("whatsapp-link")
+    for (var a of anchors) { a.href = href }
+}
+
+// device /////////////////////////////////////////////////////////////////////
+
+function isMobileDevice() {
+    return (typeof window.orientation != "undefined")
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+main()
+</script>
+</body>
+</html>
