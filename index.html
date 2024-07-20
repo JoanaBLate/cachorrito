@@ -329,7 +329,7 @@
         <br><br>
         <span class="font-26px pangolin">Entre em contato!</span><br>
         <br>
-        <a class="whatsapp-link" target="_blank" href=""><span class="whatsapp-icon"></span></a><br>
+        <a class="whatsapp-link" target="_blank" href="" onclick="gtag_report_conversion()"><span class="whatsapp-icon"></span></a><br>
         WhatsApp &nbsp; (51) 995.30.95.57
         <br><br>
         
@@ -432,6 +432,26 @@ main()
 
   gtag('config', 'AW-16649016861');
 </script>
+
+<!-- Event snippet for Visualização de página (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16649016861/gRgjCLipqcQZEJ2s74I-',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
 </body>
 </html>
