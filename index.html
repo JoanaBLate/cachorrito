@@ -159,6 +159,7 @@
             height: 1px;
         }
         .indisponivel {
+            display: inline-block;
             width: 100%;
             height: 340px;
             padding: 150px 10px 0 10px;
@@ -308,7 +309,7 @@
                
         <span class="product">
             <!-- img class="width-100pc" src="images/suino-triturado.png" alt="Amostra De Produto Cachorrito" -->
-            <div class="indisponivel">produto não disponível no momento</div>
+            <span class="indisponivel">produto não disponível no momento</span>
             <br><b>com carne suína &nbsp; 330g <br><span class="font-30px">R$ 8,20</span></b>
         </span>
     </div>    
@@ -420,5 +421,17 @@ function isMobileDevice() {
 
 main()
 </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16649016861">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16649016861');
+</script>
+
 </body>
 </html>
