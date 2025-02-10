@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -98,9 +97,6 @@
         .font-30px {
             font-size: 30px;
         }
-        .font-36px {
-            font-size: 36px;
-        }
         .font-120pc {
             font-size: 120%;
         }
@@ -123,9 +119,6 @@
         }
         .mediumblue {
             color: mediumblue;
-        }
-        .laranjito {
-            color: rgb(200,70,10); /* #C8450A*/
         }
         .bg-silver {
             background-color: silver;
@@ -192,12 +185,6 @@
             color: silver;
             background-color: dimgrey;        
         }
-        .display {        
-            display: inline-block;
-            width: 100%;
-            max-width: 600px;
-            background: darkorange;
-        } 
         
         .whatsapp-icon {
             display: inline-block;
@@ -327,7 +314,7 @@
         
         <span class="product">
             <img class="width-100pc" src="images/ingredientes-bovino.png" alt="Amostra De Produto Cachorrito">
-            <br><br><b>com carne bovina &nbsp; 330g <br><span class="font-30px">R$ 9,70</span></b>
+            <br><br><b>com carne bovina &nbsp; 330g <br><span class="font-30px">R$ 8,60</span></b>
         </span>
         
         <!--span class="three-product-spacer-spacer block-before-790px"></span -->
@@ -336,7 +323,7 @@
         
         <span class="product">
             <img class="width-100pc" src="images/frango-triturado.png" alt="Amostra De Produto Cachorrito">
-            <br><br><b>com carne de frango &nbsp; 330g <br><span class="font-30px">R$ 8,60</span></b>
+            <br><br><b>com carne de frango &nbsp; 330g <br><span class="font-30px">R$ 7,50</span></b>
         </span>
         
         <!-- span class="three-product-spacer-spacer block-before-1200px"></span>
@@ -344,7 +331,7 @@
         <span class="product">
             <! - - img class="width-100pc" src="images/suino-triturado.png" alt="Amostra De Produto Cachorrito" - - >
             <span class="indisponivel">produto não disponível no momento</span>
-            <br><b>com carne suína &nbsp; 330g <br><span class="font-30px">R$ 9,70</span></b>
+            <br><b>com carne suína &nbsp; 330g <br><span class="font-30px">R$ 8,20</span></b>
         </span -->
     </div>    
     
@@ -357,14 +344,12 @@
             <li>alguns cães desenvolvem <b>problemas de saúde</b>, como doenças de pele e outras alergias, obesidade, doenças dentárias e distúrbios gastrointestinais</li>
         </ul>
         <br><br>
-    
-        <canvas id="display" class="display"></canvas>
-        <br>
-        <span class="pad-top-10px pad-bottom-10px font-36px weight-600 laranjito" style="display:inline-block">
-            Solicite amostra grátis!
-        </span>
     </div>
     
+    <div class="center pad-top-10px pad-bottom-10px font-30px weight-600 mediumblue bg-offer">
+        Solicite amostra grátis!
+    </div>   
+         
     <footer class="center font-14px weight-600 white bg-laranjito">
         <br><br>
         <span class="font-26px pangolin">Entre em contato!</span><br>
@@ -389,7 +374,7 @@
 <script>
 "use strict"
 
-// globals ////////////////////////////////////////////////////////////////////
+// main ///////////////////////////////////////////////////////////////////////
 
 var whatsAppSvgIcon = '<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;" version="1.1" viewBox="0 0 24 24" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="24" id="Artboard1" style="fill:none;" width="24" x="0" y="0"/><g><g><path d="M4.018,17.048c-0.96,-1.484 -1.518,-3.253 -1.518,-5.151c0,-5.243 4.257,-9.5 9.5,-9.5c5.243,0 9.5,4.257 9.5,9.5c0,5.243 -4.257,9.5 -9.5,9.5c-1.777,0 -3.44,-0.489 -4.863,-1.339l-4.637,1.545l1.518,-4.555Z" style="fill:#f3f3f3;"/><path d="M5.795,16.304c-0.886,-1.244 -1.407,-2.765 -1.407,-4.407c0,-4.201 3.411,-7.612 7.612,-7.612c4.201,0 7.612,3.411 7.612,7.612c0,4.201 -3.411,7.611 -7.612,7.611c-1.59,0 -3.066,-0.488 -4.288,-1.323l-2.862,0.954l0.945,-2.835Z" style="fill:#00a82d;"/></g><path d="M9.714,13.873c-1.124,-1.374 -1.874,-3.056 -2.109,-4.88c-0.063,-0.508 0.106,-1.018 0.461,-1.387c0.355,-0.369 0.858,-0.558 1.368,-0.515l0.049,0.005c0,0 0.561,0.15 0.868,0.233c0.122,0.033 0.219,0.124 0.26,0.243c0.138,0.41 0.464,1.373 0.618,1.826c0.05,0.147 0.004,0.31 -0.114,0.41c-0.233,0.196 -0.618,0.52 -0.858,0.723c-0.129,0.109 -0.17,0.29 -0.1,0.443c0.279,0.608 0.635,1.176 1.057,1.69c0.434,0.502 0.933,0.949 1.485,1.327c0.14,0.095 0.325,0.085 0.454,-0.024c0.241,-0.202 0.626,-0.526 0.858,-0.722c0.119,-0.1 0.287,-0.117 0.424,-0.043c0.42,0.228 1.314,0.712 1.694,0.918c0.111,0.06 0.185,0.172 0.196,0.297c0.029,0.317 0.083,0.895 0.083,0.895l-0.004,0.049c-0.044,0.51 -0.315,0.974 -0.739,1.261c-0.424,0.288 -0.955,0.368 -1.445,0.22c-1.772,-0.545 -3.313,-1.581 -4.479,-2.937l-0.027,-0.032Z" style="fill:#f3f3f3;"/></g></svg>'
 
@@ -397,98 +382,22 @@ var whatsAppSvgIcon = '<svg height="100%" style="fill-rule:evenodd;clip-rule:eve
 var images = { }
 var imagesToLoad = 0
 
-const displayCtx = document.getElementById("display").getContext("2d")
-
-var lastAnimationMoment = 0
-
-var animationCallback = null
-
-var TOP = 0
-var LEFT = 0
-var SIDE = 0
-
-var GLOBAL_ALPHA = 1
-
-var DURATION = -1  
-
-var mosaicSequence = [ ]
-
-// images /////////////////////////////////////////////////////////////////////
+// load images ////////////////////////////////////////////////////////////////
 
 function loadImage(name, src) {
-    //
     imagesToLoad += 1
-    //
-    let img = new Image()
+    var img = new Image()
     img.onload = function () { loaded(name, img) }
     img.src = src
     // loaded
     function loaded(name, img) {
         imagesToLoad -= 1
-        let cnv = document.createElement("canvas")
+        var cnv = document.createElement("canvas")
         cnv.width = img.width
         cnv.height = img.height
         cnv.getContext("2d").drawImage(img, 0, 0)
         //
         images[name] = cnv
-    }
-}
-
-function printImage(name) {
-    //
-    if (SIDE > 600) { SIDE = 600 }
-    //
-    if (TOP < 0) { TOP = 0 }
-    if (TOP + SIDE > 600) { TOP = 600 - SIDE }
-    //  
-    if (LEFT + SIDE > 600) { LEFT = 600 - SIDE }
-    if (LEFT < 0) { LEFT = 0 }
-    //
-    displayCtx.globalAlpha = GLOBAL_ALPHA
-    //
-    displayCtx.drawImage(images[name], LEFT, TOP, SIDE, SIDE, 0, 0, 600, 600)    
-}
-
-function printTranslucent(name) {
-    //
-    if (GLOBAL_ALPHA < 0.3) { 
-        GLOBAL_ALPHA *= 1.05 
-    }
-    else {
-        GLOBAL_ALPHA *= 1.01 
-    }
-    //
-    if (GLOBAL_ALPHA > 0.9) { GLOBAL_ALPHA = 1 }
-    //
-    printImage(name)
-}
-
-function printMosaicFrame() {
-    //
-    const coords = mosaicSequence.shift()
-    //
-    const left = coords[0] * 200
-    const top  = coords[1] * 200
-    //
-    displayCtx.drawImage(images["laranjito"], left, top, 200, 200, left, top, 200, 200)
-}
-
-function resetMosaicSequence() {
-    //
-    mosaicSequence = [ ]
-    //
-    const stringCoords = "00 01 02 10 11 12 20 21 22 30 31 32 40 41 42".split(" ")
-    //
-    while (stringCoords.length != 0) {
-        //
-        const index = Math.floor(Math.random() * stringCoords.length)
-        //
-        const stringPair = stringCoords.splice(index, 1)[0]
-        //
-        const a = parseInt(stringPair[0])
-        const b = parseInt(stringPair[1])
-        //
-        mosaicSequence.push([ a, b ])    
     }
 }
 
@@ -498,173 +407,33 @@ function main() {
     processWhatsAppIcons()
     processWhatsAppLinks()
     //
-    displayCtx.canvas.width = 600
-    displayCtx.canvas.height = 600 
-    //
-    loadImage("one", "images/one.jpg")
-    loadImage("two", "images/two.jpg")
-    loadImage("three", "images/three.jpg")
-    loadImage("laranjito", "images/laranjito-600x600.png")    
-    //
     goOn()
 }
 
 function goOn() {
-    //
-    if (imagesToLoad != 0) { setTimeout(goOn, 10); return }
-    //
-    requestAnimationFrame(mainLoop)
-    //
-    resetAnimationZero()
+    if (imagesToLoad == 0) { mainLoop(); return; }
+    setTimeout(goOn, 10)
 }
 
 function mainLoop() {
-    //
-    requestAnimationFrame(mainLoop)
-    //
-    if (Date.now() - lastAnimationMoment < 15) { return }
-    //
-    lastAnimationMoment = Date.now()
-    //
-    animationCallback()
-}
-
-// animation zero /////////////////////////////////////////////////////////////
-
-function resetAnimationZero() {
-    //
-    DURATION = -1 
-    //
-    resetMosaicSequence()
-    //
-    animationCallback = playAnimationZero
-}
-
-function playAnimationZero() {
-    //
-    DURATION += 1  
-    //
-    if (mosaicSequence.length != 0) { 
-        //
-        const time = (mosaicSequence.length < 4) ? 1 : 3
-        //
-        if (DURATION == time) { DURATION = -1; printMosaicFrame() }
-        //
-        return 
-    }
-    //
-    if (DURATION == 120) { resetAnimationOne() }
-}
-
-// animation one //////////////////////////////////////////////////////////////
-
-function resetAnimationOne() {
-    //
-    DURATION = -1
-    //
-    TOP = 150
-    LEFT = 150
-    SIDE = 300
-    //
-    GLOBAL_ALPHA = 0.1
-    //
-    animationCallback = playAnimationOne
-}
-
-function playAnimationOne() {
-    //
-    if (GLOBAL_ALPHA < 1) { printTranslucent("one"); return }
-    //
-    DURATION += 1    
-    //
-    if (DURATION == 400) { resetAnimationTwo(); return }
-    //
-    if (DURATION < 300) {
-        //
-        TOP  -= 0.5
-        LEFT -= 0.5        
-        SIDE += 1
-    }
-    //
-    printImage("one")
-}
-
-// animation two //////////////////////////////////////////////////////////////
-
-function resetAnimationTwo() {
-    //
-    DURATION = -1
-    //
-    TOP = 150
-    LEFT = 150
-    SIDE = 300
-    //
-    animationCallback = playAnimationTwo
-}
-
-function playAnimationTwo() {
-    //
-    if (GLOBAL_ALPHA < 1) { printTranslucent("two"); return }
-    //
-    DURATION += 1  
-    //
-    if (DURATION == 400) { resetAnimationThree(); return }
-    //
-    if (DURATION < 300) {
-        //
-        TOP  -= 0.5
-        LEFT -= 0.5        
-        SIDE += 1
-    }
-    //
-    printImage("two")
-}
-
-// animation three ////////////////////////////////////////////////////////////
-
-function resetAnimationThree() {
-    //
-    DURATION = -1
-    //
-    TOP = 150
-    LEFT = 150
-    SIDE = 300
-    //
-    animationCallback = playAnimationThree
-}
-
-function playAnimationThree() {
-    //
-    if (GLOBAL_ALPHA < 1) { printTranslucent("three"); return }
-    //
-    DURATION += 1  
-    //
-    if (DURATION == 400) { resetAnimationZero(); return }
-    //
-    if (DURATION < 300) {
-        //
-        TOP  -= 0.5
-        LEFT -= 0.5        
-        SIDE += 1
-    }
-    //    
-    printImage("three")
+    // no animation
+    // requestAnimationFrame(mainLoop)
 }
 
 // whatsapp ///////////////////////////////////////////////////////////////////
 
 function processWhatsAppIcons() {
-    let elements = document.getElementsByClassName("whatsapp-icon")
-    for (const e of elements) { e.innerHTML = whatsAppSvgIcon }
+    var elements = document.getElementsByClassName("whatsapp-icon")
+    for (var e of elements) { e.innerHTML = whatsAppSvgIcon }
 }
 
 function processWhatsAppLinks() {
-    let href = "https://"
+    var href = "https://"
     href += isMobileDevice() ? "api" : "web"
     href += ".whatsapp.com/send?phone=5551995309557&text=Ol%C3%A1%20Cachorrito!%20Desejo%20informa%C3%A7%C3%B5es%20sobre%20a%20amostra%20gr%C3%A1tis!"
 
-    let anchors = document.getElementsByClassName("whatsapp-link")
-    for (const a of anchors) { a.href = href }
+    var anchors = document.getElementsByClassName("whatsapp-link")
+    for (var a of anchors) { a.href = href }
 }
 
 // device /////////////////////////////////////////////////////////////////////
@@ -711,4 +480,3 @@ function gtag_report_conversion(url) {
 
 </body>
 </html>
-
